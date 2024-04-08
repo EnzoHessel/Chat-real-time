@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs"
 
 import { Inter } from "next/font/google";
@@ -24,7 +23,7 @@ export default function RootLayout({
       <html lang="pt-BR">
         <body className={inter.className}>
           <Topbar />
-          <main>
+          <main className="flex flex-row">
             <LeftSidebar />
 
               <section className="main-container">
