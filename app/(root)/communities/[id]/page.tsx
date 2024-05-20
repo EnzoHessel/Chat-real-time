@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { currentUser } from "@clerk/nextjs";
 
-import { communityTabs } from "@/constants";
+import { communityTabs } from "@/_constants";
 
 import UserCard from "@/components/cards/UserCard";
 import ThreadsTab from "@/components/shared/ThreadsTab";

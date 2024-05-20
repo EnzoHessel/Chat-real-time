@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { SignOutButton, SignedIn, useAuth } from "@clerk/nextjs";
 
-import { sidebarLinks } from "@/constants";
+import { sidebarLinks } from "@/_constants";
 
 const LeftSidebar = () => {
   const router = useRouter();
