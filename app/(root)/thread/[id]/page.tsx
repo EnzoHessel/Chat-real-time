@@ -1,11 +1,11 @@
 import { redirect } from "next/navigation";
 import { currentUser } from "@clerk/nextjs";
 
-import Comment from "@/app/_components/forms/Comment";
-import ThreadCard from "@/app/_components/cards/ThreadCard";
+import Comment from "@/components/forms/Comment";
+import ThreadCard from "@/components/cards/ThreadCard";
 
-import { fetchUser } from "@/app/_lib/actions/user.actions";
-import { fetchThreadById } from "@/app/_lib/actions/thread.actions";
+import { fetchUser } from "@/lib/actions/user.actions";
+import { fetchThreadById } from "@/lib/actions/thread.actions";
 
 export const revalidate = 0;
 
@@ -63,4 +63,4 @@ async function page({ params }: { params: { id: string } }) {
   );
 }
 
-export default page/app/_
+export default page;
