@@ -1,5 +1,5 @@
 "use server";
-
+ 
 import { FilterQuery, SortOrder } from "mongoose";
 
 import Community from "../models/community.model";
@@ -78,19 +78,11 @@ export async function fetchCommunityPosts(id: string) {
       path: "threads",
       model: Thread,
       populate: [
-        {
-          path: "author",
-          model: User,
-          select: "name image id", // Select the "name" and "_id" fields from the "User" model
-        },
+        { path: "author", model: User, select: ["name", "image"] }, // Use array for clarity
         {
           path: "children",
           model: Thread,
-          populate: {
-            path: "author",
-            model: User,
-            select: "image _id", // Select the "name" and "_id" fields from the "User" model
-          },
+          populate: { path: "author", model: User, select: ["image", "_id"] }, // Select needed fields
         },
       ],
     });
