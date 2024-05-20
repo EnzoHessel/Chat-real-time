@@ -1,8 +1,8 @@
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
-import { fetchUser } from "@/lib/actions/user.actions";
-import AccountProfile from "@/components/forms/AccountProfile";
+import { fetchUser } from "@/app/_lib/actions/user.actions";
+import AccountProfile from "@/app/_components/forms/AccountProfile";
 
 // Copy paste most of the code as it is from the /onboarding
 

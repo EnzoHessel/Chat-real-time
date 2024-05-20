@@ -1,11 +1,9 @@
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
-
-import ThreadCard from "@/components/cards/ThreadCard";
-import Pagination from "@/components/shared/Pagination";
-
-import { fetchPosts } from "@/lib/actions/thread.actions";
-import { fetchUser } from "@/lib/actions/user.actions";
+import { fetchUser } from "../_lib/actions/user.actions";
+import { fetchPosts } from "../_lib/actions/thread.actions";
+import ThreadCard from "../_components/cards/ThreadCard";
+import Pagination from "../_components/shared/Pagination";
 
 async function Home({
   searchParams,

@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 
-import { fetchCommunityPosts } from "@/lib/actions/community.actions";
-import { fetchUserPosts } from "@/lib/actions/user.actions";
+import { fetchCommunityPosts } from "@/app/_lib/actions/community.actions";
+import { fetchUserPosts } from "@/app/_lib/actions/user.actions";
 
 import ThreadCard from "../cards/ThreadCard";
 

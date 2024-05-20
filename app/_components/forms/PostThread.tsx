@@ -13,12 +13,12 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
+} from "@/app/_components/ui/form";
+import { Button } from "@/app/_components/ui/button";
+import { Textarea } from "@/app/_components/ui/textarea";
 
-import { ThreadValidation } from "@/lib/validations/thread";
-import { createThread } from "@/lib/actions/thread.actions";
+import { ThreadValidation } from "@/app/_lib/validations/thread";
+import { createThread } from "@/app/_lib/actions/thread.actions";
 
 interface Props {
   userId: string;
